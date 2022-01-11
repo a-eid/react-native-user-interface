@@ -17,6 +17,6 @@ const UserInterface = NativeModules.UserInterface
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return UserInterface.multiply(a, b);
+export function setUserInterface(style: 'dark' | 'light' | 'unspecified') {
+  UserInterface.setUserInterface(style);
 }
